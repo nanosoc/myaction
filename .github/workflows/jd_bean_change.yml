@@ -6,7 +6,7 @@ name: jd_bean_change
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 2 * * *'
+    - cron: '0 16 * * *'
   watch:
     types: started
   repository_dispatch:
@@ -18,8 +18,9 @@ jobs:
     if: github.event.repository.owner.id == github.event.sender.id
     steps:
       - name: Checkout
-        run: |
-          git clone -b master https://github.com/lxk0301/jd_scripts.git ~/jd_scripts
+        uses: actions/checkout@v2
+        with:
+          repository: fm1223/jd-scripts
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -33,16 +34,20 @@ jobs:
           key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }} # 使用 package-lock.json 的 Hash 作为缓存的 key。也可以使用 package.json 代替
       - name: npm install
         run: |
-          cd ~/jd_scripts
           npm install
       - name: '运行 【京豆变动通知】'
         run: |
-          cd ~/jd_scripts
-          node jd_bean_change.js
+          node jd_bean_change.js # 京豆变动
+          node uploadShareCode.js # 上传互助码
+          node jd_kd.js # 京东快递签到
+          node jd_syj.js # 十元街
+          node jd_bean_home.js # 领京豆额外奖励&抢京豆
+          node jd_rankingList.js # 京东排行榜
+          node jd_cash.js # 签到领现金
+          node jx_sign.js # 京喜签到+双签到
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
-          JD_USER_AGENT: ${{ secrets.JD_USER_AGENT }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
           BARK_SOUND: ${{ secrets.BARK_SOUND }}
@@ -51,7 +56,6 @@ jobs:
           DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
           IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
-          QQ_SKEY: ${{ secrets.QQ_SKEY }}
-          QQ_MODE: ${{ secrets.QQ_MODE }}
-          PUSH_PLUS_TOKEN: ${{ secrets.PUSH_PLUS_TOKEN }}
-          PUSH_PLUS_USER: ${{ secrets.PUSH_PLUS_USER }}
+          JD_818_SHAREID_NOTIFY: ${{ secrets.JD_818_SHAREID_NOTIFY }}
+          JD_USER_AGENT: ${{ secrets.JD_USER_AGENT }}
+          JD_CASH_SHARECODES: ${{ secrets.JD_CASH_SHARECODES }}

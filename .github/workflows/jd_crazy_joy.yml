@@ -6,11 +6,11 @@ name: jd_crazy_joy
 on:
   workflow_dispatch:
   schedule:
-    - cron: '20 19 * * *'
+    - cron: '0 16 * * *'
   watch:
     types: started
   repository_dispatch:
-    types: jd_crazy_joy
+    types: crazy_joy
 jobs:
   build:
 
@@ -18,8 +18,9 @@ jobs:
     if: github.event.repository.owner.id == github.event.sender.id
     steps:
       - name: Checkout
-        run: |
-          git clone -b master https://github.com/lxk0301/jd_scripts.git ~/jd_scripts
+        uses: actions/checkout@v2
+        with:
+          repository: fm1223/jd-scripts
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -33,28 +34,21 @@ jobs:
           key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }} # 使用 package-lock.json 的 Hash 作为缓存的 key。也可以使用 package.json 代替
       - name: npm install
         run: |
-          cd ~/jd_scripts
           npm install
-      - name: '运行 【疯狂的JOY】'
+      - name: '运行 【疯狂的joy】'
         run: |
-          cd ~/jd_scripts
           node jd_crazy_joy.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
-          JD_USER_AGENT: ${{ secrets.JD_USER_AGENT }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
-          FRUITSHARECODES: ${{ secrets.FRUITSHARECODES }}
-          FRUIT_BEAN_CARD: ${{ secrets.FRUIT_BEAN_CARD }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_USER_ID: ${{ secrets.TG_USER_ID }}
-          FRUIT_NOTIFY_CONTROL: ${{ secrets.FRUIT_NOTIFY_CONTROL }}
           BARK_SOUND: ${{ secrets.BARK_SOUND }}
           DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
           IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
-          QQ_SKEY: ${{ secrets.QQ_SKEY }}
-          QQ_MODE: ${{ secrets.QQ_MODE }}
-          PUSH_PLUS_TOKEN: ${{ secrets.PUSH_PLUS_TOKEN }}
-          PUSH_PLUS_USER: ${{ secrets.PUSH_PLUS_USER }}
+          JD_USER_AGENT: ${{ secrets.JD_USER_AGENT }}
+          JDJOY_HELPSELF: ${{ secrets.JDJOY_HELPSELF }} #疯狂的joy循环助力，true表示循环助力,false表示不循环助力，默认不开启循环助力。
+          JDJOY_APPLYJDBEAN: ${{ secrets.JDJOY_APPLYJDBEAN }} #疯狂的joy京豆兑换，目前最小值为500/1000京豆，默认不开启京豆兑换。
