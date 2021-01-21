@@ -70,6 +70,13 @@ jobs:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JXNCTOKENS: ${{ secrets.JXNCTOKENS }}
 
+      - name: '运行 【宠汪汪】'
+        run: |
+          cd ~/TaskAction
+          node jd_joy.js
+        env:
+          JD_COOKIE: ${{ secrets.JD_COOKIE }}
+
       - name: '运行 【宠汪汪积分兑换奖品】'
         run: |
           cd ~/TaskAction
