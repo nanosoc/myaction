@@ -77,6 +77,13 @@ jobs:
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
 
+      - name: '运行 【宠汪汪喂食】'
+        run: |
+          cd ~/TaskAction
+          node jd_joy_feedPets.js
+        env:
+          JD_COOKIE: ${{ secrets.JD_COOKIE }}
+
       - name: '运行 【宠汪汪积分兑换奖品】'
         run: |
           cd ~/TaskAction
