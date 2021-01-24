@@ -209,7 +209,7 @@ jobs:
       - name: '运行 【盲盒抽京豆】'
         run: |
           cd ~/TaskAction
-          node jd_mh.js
+          node jd_sgmh.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
