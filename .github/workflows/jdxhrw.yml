@@ -48,6 +48,14 @@ jobs:
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
 
+      - name: '运行 【京东种豆得豆】'
+        run: |
+          cd ~/TaskAction
+          node jd_plantBean.js
+        env:
+          JD_COOKIE: ${{ secrets.JD_COOKIE }}
+#          BARK_PUSH: ${{ secrets.BARK_PUSH }}
+
       - name: '运行 【东东萌宠】'
         run: |
           cd ~/TaskAction
