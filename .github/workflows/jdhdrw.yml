@@ -41,19 +41,11 @@ jobs:
           cd ~/TaskAction
           git checkout jd_code
           npm install
+
       - name: '运行 【京东炸年兽】'
         run: |
           cd ~/TaskAction
           node jd_nian.js
-        env:
-          JD_COOKIE: ${{ secrets.JD_COOKIE }}
-          BARK_PUSH: ${{ secrets.BARK_PUSH }}
-
-          
-      - name: '运行 【集鞭炮赢京豆🧨】'
-        run: |
-          cd ~/TaskAction
-          node jd_firecrackers.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
@@ -89,6 +81,7 @@ jobs:
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
+
 
       - name: '运行 【京东手机年终奖】'
         run: |
