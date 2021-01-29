@@ -6,7 +6,7 @@ name: 炸年兽领爆竹
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '*/60 * * * *'
   watch:
     types: started
   repository_dispatch:
