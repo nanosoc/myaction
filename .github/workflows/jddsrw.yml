@@ -41,7 +41,6 @@ jobs:
           cd ~/TaskAction
           git checkout jd_code
           npm install
-
       - name: '运行 【签到】'
         run: |
           cd ~/TaskAction
@@ -247,4 +246,3 @@ jobs:
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
-
