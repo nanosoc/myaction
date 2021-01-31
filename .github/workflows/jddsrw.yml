@@ -6,7 +6,7 @@ name: 京东定时任务
 on:
   workflow_dispatch:
   schedule:
-    - cron: '40 3/12 * * *'
+    - cron: '45 3/12 * * *'
   watch:
     types: started
   repository_dispatch:
@@ -238,7 +238,14 @@ jobs:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
 
-      
+      - name: '运行 【小鸽有礼2】'
+        run: |
+          cd ~/TaskAction
+          node jd_xgyl.js
+        env:
+          JD_COOKIE: ${{ secrets.JD_COOKIE }}
+          BARK_PUSH: ${{ secrets.BARK_PUSH }}
+  
       - name: '运行 【京东抽奖机】'
         run: |
           cd ~/TaskAction
