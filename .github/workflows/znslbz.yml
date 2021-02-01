@@ -45,7 +45,7 @@ jobs:
 
       - name: '运行 【京东炸年兽领爆竹🧨】'
         run: |
-          cd ~/TaskAction
+          cd ~/myaction
           node jd_nianCollect.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
@@ -53,7 +53,7 @@ jobs:
 
       - name: '运行 【京东神仙书院答题】'
         run: |
-          cd ~/TaskAction
+          cd ~/myaction
           node jd_immortal_answer.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
