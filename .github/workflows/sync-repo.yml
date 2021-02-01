@@ -1,4 +1,4 @@
-name: sync fm1223-scripts
+name: sync repo
 on:
   workflow_dispatch:
   schedule:
@@ -18,11 +18,11 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync fm1223-scripts
+      - name: sync jd_script
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "https://github.com/fm1223/jd-scripts.git"
+          source_repo: "https://gitee.com/lxk0301/jd_scripts.git"
           source_branch: "master"
-          destination_branch: "master"
+          destination_branch: "jd_code"
           github_token: ${{ secrets.PAT }}
