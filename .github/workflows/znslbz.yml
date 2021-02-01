@@ -21,7 +21,7 @@ jobs:
       - name: Checkout
         if: env.JD_COOKIE
         run: |
-          git clone https://github.com/nanosoc/myaction.git ~/myaction
+          git clone https://github.com/1217079729/TaskAction.git ~/TaskAction
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         if: env.JD_COOKIE
@@ -38,14 +38,14 @@ jobs:
       - name: npm install
         if: env.JD_COOKIE
         run: |
-          cd ~/myaction
+          cd ~/TaskAction
           git checkout jd_code
           npm install
           
 
       - name: '运行 【京东炸年兽领爆竹🧨】'
         run: |
-          cd ~/myaction
+          cd ~/TaskAction
           node jd_nianCollect.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
@@ -53,7 +53,7 @@ jobs:
 
       - name: '运行 【京东神仙书院答题】'
         run: |
-          cd ~/myaction
+          cd ~/TaskAction
           node jd_immortal_answer.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
