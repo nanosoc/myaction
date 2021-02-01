@@ -21,7 +21,7 @@ jobs:
       - name: Checkout
         if: env.JD_COOKIE
         run: |
-          git clone https://github.com/1217079729/TaskAction.git ~/TaskAction
+          git clone https://github.com/nanosoc/myaction.git ~/myaction
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         if: env.JD_COOKIE
@@ -38,7 +38,7 @@ jobs:
       - name: npm install
         if: env.JD_COOKIE
         run: |
-          cd ~/TaskAction
+          cd ~/myaction
           git checkout jd_code
           npm install
           
