@@ -36,26 +36,9 @@ jobs:
       - name: npm install
         run: |
           npm install
-      - name: '运行 【京豆变动通知】'
+      - name: '运行 【京东炸年兽领爆竹🧨】'
         run: |
-          node jd_bean_change.js # 京豆变动
-          node jd_kd.js # 京东快递签到
-          node jd_syj.js # 十元街
-          node jd_bean_home.js # 领京豆额外奖励&抢京豆
-          node jd_rankingList.js # 京东排行榜
-          node jd_cash.js # 签到领现金
-          node jx_sign.js # 京喜签到+双签到
+          node jd_nianCollect.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
-          JD_DEBUG: ${{ secrets.JD_DEBUG }}
-          PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
-          BARK_SOUND: ${{ secrets.BARK_SOUND }}
-          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
-          TG_USER_ID: ${{ secrets.TG_USER_ID }}
-          DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
-          DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
-          IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
-          JD_818_SHAREID_NOTIFY: ${{ secrets.JD_818_SHAREID_NOTIFY }}
-          JD_USER_AGENT: ${{ secrets.JD_USER_AGENT }}
-          JD_CASH_SHARECODES: ${{ secrets.JD_CASH_SHARECODES }}
