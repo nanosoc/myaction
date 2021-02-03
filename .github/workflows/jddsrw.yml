@@ -41,6 +41,7 @@ jobs:
           cd ~/TaskAction
           git checkout jd_code
           npm install
+
       - name: '运行 【签到】'
         run: |
           cd ~/TaskAction
@@ -60,7 +61,7 @@ jobs:
       - name: '运行 【京喜签到】'
         run: |
           cd ~/TaskAction
-          node jx_sign.js
+          node jingxi.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
 #          BARK_PUSH: ${{ secrets.BARK_PUSH }}
@@ -245,7 +246,23 @@ jobs:
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
-  
+
+      - name: '运行 【京东压岁钱】'
+        run: |
+          cd ~/TaskAction
+          node jd_newYearMoney.js
+        env:
+          JD_COOKIE: ${{ secrets.JD_COOKIE }}
+          BARK_PUSH: ${{ secrets.BARK_PUSH }}
+
+      - name: '运行 【京东压岁钱抢百元卡】'
+        run: |
+          cd ~/TaskAction
+          node jd_newYearMoney_lottery.js
+        env:
+          JD_COOKIE: ${{ secrets.JD_COOKIE }}
+          BARK_PUSH: ${{ secrets.BARK_PUSH }}
+
       - name: '运行 【京东抽奖机】'
         run: |
           cd ~/TaskAction
@@ -253,3 +270,4 @@ jobs:
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
+
