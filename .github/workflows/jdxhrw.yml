@@ -148,13 +148,13 @@ jobs:
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
 
-      - name: '运行 【东东5G】'
-        run: |
-          cd ~/TaskAction
-          node jd_5g.js
-        env:
-          JD_COOKIE: ${{ secrets.JD_COOKIE }}
-          BARK_PUSH: ${{ secrets.BARK_PUSH }}
+  #    - name: '运行 【东东5G】'
+  #      run: |
+  #        cd ~/TaskAction
+  #        node jd_5g.js
+  #      env:
+  #        JD_COOKIE: ${{ secrets.JD_COOKIE }}
+  #        BARK_PUSH: ${{ secrets.BARK_PUSH }}
 
       - name: '运行 【东东818】'
         run: |
