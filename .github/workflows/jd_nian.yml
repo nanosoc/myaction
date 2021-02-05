@@ -6,7 +6,7 @@ name: jd_nian
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */2 * * *' # */2 * * *
+    - cron: '* */2 * * *'
   watch:
     types: [started]
   repository_dispatch:
@@ -52,4 +52,3 @@ jobs:
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
           IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
           JD_USER_AGENT: ${{ secrets.JD_USER_AGENT }}
-          JDNIAN_SHARECODES: ${{ secrets.JDNIAN_SHARECODES }}
