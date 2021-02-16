@@ -6,7 +6,7 @@ name: 京东定时任务
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 4/12 * * *'
+    - cron: '59 3/12 * * *'
   watch:
     types: started
   repository_dispatch:
@@ -21,7 +21,7 @@ jobs:
       - name: Checkout
         if: env.JD_COOKIE
         run: |
-          git clone https://github.com/Azccccc/jd_scripts.git ~/TaskAction
+          git clone https://github.com/fm1223/jd-scripts.git ~/TaskAction
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         if: env.JD_COOKIE
