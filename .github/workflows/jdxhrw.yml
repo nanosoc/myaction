@@ -39,7 +39,6 @@ jobs:
         if: env.JD_COOKIE
         run: |
           cd ~/TaskAction
-#          git checkout jd_code
           npm install
       - name: '运行 【东东农场】'
         run: |
