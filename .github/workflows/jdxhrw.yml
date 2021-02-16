@@ -21,7 +21,7 @@ jobs:
       - name: Checkout
         if: env.JD_COOKIE
         run: |
-          git clone https://github.com/nanosoc/myaction.git ~/TaskAction
+          git clone https://github.com/fm1223/jd-scripts.git ~/TaskAction
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         if: env.JD_COOKIE
@@ -39,7 +39,7 @@ jobs:
         if: env.JD_COOKIE
         run: |
           cd ~/TaskAction
-          git checkout jd_code
+   #       git checkout jd_code
           npm install
       - name: '运行 【东东农场】'
         run: |
