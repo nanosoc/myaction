@@ -21,7 +21,7 @@ jobs:
       - name: Checkout
         if: env.JD_COOKIE
         run: |
-          git clone https://github.com/fm1223/jd-scripts.git ~/TaskAction
+          git clone https://github.com/Azccccc/jd_scripts.git ~/TaskAction
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         if: env.JD_COOKIE
@@ -222,13 +222,13 @@ jobs:
  #         JD_COOKIE: ${{ secrets.JD_COOKIE }}
 #          BARK_PUSH: ${{ secrets.BARK_PUSH }}
 
-      - name: '运行 【京东超级盒子】'
-        run: |
-          cd ~/TaskAction
-          node jd_super_box.js
-        env:
-          JD_COOKIE: ${{ secrets.JD_COOKIE }}
-          BARK_PUSH: ${{ secrets.BARK_PUSH }}
+#      - name: '运行 【京东超级盒子】'
+#        run: |
+#          cd ~/TaskAction
+#          node jd_super_box.js
+#        env:
+#          JD_COOKIE: ${{ secrets.JD_COOKIE }}
+#          BARK_PUSH: ${{ secrets.BARK_PUSH }}
 
       - name: '运行 【小鸽有礼】'
         run: |
