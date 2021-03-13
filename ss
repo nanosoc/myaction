@@ -1,35 +1,35 @@
 proxies:
-  - {name: 智能分配 3, server: 120.232.43.50, port: 60013, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: 🇺🇸 美国 3, server: 120.232.43.50, port: 60013, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: 欧洲, server: 120.232.43.50, port: 60013, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: 🇰🇷 韩国 3, server: 120.232.43.50, port: 60013, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: 🇭🇰 香港 3, server: 120.232.43.50, port: 60013, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: 🇯🇵 日本 3, server: 120.232.43.50, port: 60013, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: 🇨🇳 台湾 3, server: 120.232.43.50, port: 60013, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: 移动优化 3, server: 120.232.43.50, port: 60013, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: 联通优化 3, server: 120.232.43.50, port: 60013, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: 🇸🇬 新加坡 3, server: 120.232.43.50, port: 60013, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: 电信优化 3, server: 120.232.43.50, port: 60013, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: Netflix&amp;HBO, server: 120.232.43.50, port: 60013, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: 智能分配 7, server: 120.232.43.50, port: 44605, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: 🇺🇸 美国 7, server: 120.232.43.50, port: 44605, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: 欧洲 4, server: 120.232.43.50, port: 44605, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: 🇰🇷 韩国 7, server: 120.232.43.50, port: 44605, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: 🇭🇰 香港 7, server: 120.232.43.50, port: 44605, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: 🇯🇵 日本 7, server: 120.232.43.50, port: 44605, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: 移动优化 7, server: 120.232.43.50, port: 44605, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: 🇨🇳 台湾 7, server: 120.232.43.50, port: 44605, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: 🇸🇬 新加坡 7, server: 120.232.43.50, port: 44605, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: 联通优化 7, server: 120.232.43.50, port: 44605, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: 电信优化 7, server: 120.232.43.50, port: 44605, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: 智能分配 8, server: 120.232.43.50, port: 20088, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: 🇺🇸 美国 8, server: 120.232.43.50, port: 20088, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: 欧洲 5, server: 120.232.43.50, port: 20088, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: 🇰🇷 韩国 8, server: 120.232.43.50, port: 20088, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: 🇭🇰 香港 8, server: 120.232.43.50, port: 20088, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: 🇯🇵 日本 8, server: 120.232.43.50, port: 20088, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: 移动优化 8, server: 120.232.43.50, port: 20088, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: 🇨🇳 台湾 8, server: 120.232.43.50, port: 20088, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: 🇸🇬 新加坡 8, server: 120.232.43.50, port: 20088, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: 联通优化 8, server: 120.232.43.50, port: 20088, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
-  - {name: 电信优化 8, server: 120.232.43.50, port: 20088, type: ssr, cipher: none, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 智能分配 3, server: 120.232.43.50, port: 60013, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 🇺🇸 美国 3, server: 120.232.43.50, port: 60013, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 欧洲, server: 120.232.43.50, port: 60013, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 🇰🇷 韩国 3, server: 120.232.43.50, port: 60013, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 🇭🇰 香港 3, server: 120.232.43.50, port: 60013, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 🇯🇵 日本 3, server: 120.232.43.50, port: 60013, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 🇨🇳 台湾 3, server: 120.232.43.50, port: 60013, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 移动优化 3, server: 120.232.43.50, port: 60013, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 联通优化 3, server: 120.232.43.50, port: 60013, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 🇸🇬 新加坡 3, server: 120.232.43.50, port: 60013, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 电信优化 3, server: 120.232.43.50, port: 60013, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: Netflix&amp;HBO, server: 120.232.43.50, port: 60013, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 智能分配 7, server: 120.232.43.50, port: 44605, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 🇺🇸 美国 7, server: 120.232.43.50, port: 44605, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 欧洲 4, server: 120.232.43.50, port: 44605, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 🇰🇷 韩国 7, server: 120.232.43.50, port: 44605, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 🇭🇰 香港 7, server: 120.232.43.50, port: 44605, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 🇯🇵 日本 7, server: 120.232.43.50, port: 44605, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 移动优化 7, server: 120.232.43.50, port: 44605, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 🇨🇳 台湾 7, server: 120.232.43.50, port: 44605, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 🇸🇬 新加坡 7, server: 120.232.43.50, port: 44605, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 联通优化 7, server: 120.232.43.50, port: 44605, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 电信优化 7, server: 120.232.43.50, port: 44605, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 智能分配 8, server: 120.232.43.50, port: 20088, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 🇺🇸 美国 8, server: 120.232.43.50, port: 20088, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 欧洲 5, server: 120.232.43.50, port: 20088, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 🇰🇷 韩国 8, server: 120.232.43.50, port: 20088, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 🇭🇰 香港 8, server: 120.232.43.50, port: 20088, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 🇯🇵 日本 8, server: 120.232.43.50, port: 20088, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 移动优化 8, server: 120.232.43.50, port: 20088, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 🇨🇳 台湾 8, server: 120.232.43.50, port: 20088, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 🇸🇬 新加坡 8, server: 120.232.43.50, port: 20088, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 联通优化 8, server: 120.232.43.50, port: 20088, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
+  - {name: 电信优化 8, server: 120.232.43.50, port: 20088, type: ssr, cipher: auto, password: ken904, protocol: aes-256-cfb, obfs: plain, protocolparam: "", obfsparam: ""}
