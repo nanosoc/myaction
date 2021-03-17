@@ -1,8 +1,0 @@
-proxies:
-  - {name: hk, server: g.xyz, port: 80, type: ss, cipher: chacha20-ietf, password: 10010, plugin: obfs, plugin-opts: {mode: tls, host: download.windowsupdate.com}}
-  - {name: 11, server: 1.1.1.1, port: 123, type: ss, cipher: aes-128-cfb, password: qwer}
-  - {name: we, server: 1.1.1.1, port: 80, type: ssr, cipher: aes-128-cfb, password: qwer, protocol: auth_chain_b, protocolparam: 122366, obfs: tls1.2_ticket_fastauth, obfsparam: qq.com}
-  - {name: "jp", server: evud.xyz, port: 17924, type: trojan, password: 952700, udp: true}
-  - {name: "tw1", server: get.cf, port: 8080, type: vmess, uuid: 75818389-e1d8-3de6-925d-931e94d4d426, alterId: 0, cipher: auto, tls: false, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: get.cf}}
-  - {name: "G-HK", server: d.xyz, port: 443, type: vmess, uuid: 05ee8aa1-8657-4902-be2a-3e814ee71044, alterId: 0, cipher: auto, tls: true, network: ws, ws-path: /f068d9ca/, ws-headers: {Host: d.xyz}}
- 
