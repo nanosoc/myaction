@@ -1,0 +1,46 @@
+proxies:
+  - name: 高速节点1
+    server: he.ghelper.net
+    port: 443
+    type: http
+    tls: true
+  - name: 高速节点2
+    server: cm-hk.stunnel.vip
+    port: 4700
+    type: http
+    tls: true
+  - name: 高速节点3
+    server: cm-hk.stunnel.vip
+    port: 4700
+    type: http
+    username: "15c4db0c-48fe-11eb-a8bf-f23c91cfbbc9"
+    password: d5ff023a9203aede1cc0092a0bd607b8
+    tls: true
+  - name: 高速节点4
+    server: hkbn-home.ghelper.net
+    port: 443
+    type: http
+    username: "15c4db0c-48fe-11eb-a8bf-f23c91cfbbc9"
+    password: d5ff023a9203aede1cc0092a0bd607b8
+    tls: true
+  - name: 高速节点5
+    server: seattle.tcpbbr.net
+    port: 443
+    type: http
+    username: "15c4db0c-48fe-11eb-a8bf-f23c91cfbbc9"
+    password: d5ff023a9203aede1cc0092a0bd607b8
+    tls: true
+  - name: 高速节点6
+    server: cm-us.stunnel.vip
+    port: 3300
+    type: http
+    username: "15c4db0c-48fe-11eb-a8bf-f23c91cfbbc9"
+    password: d5ff023a9203aede1cc0092a0bd607b8
+    tls: true
+  - name: 高速节点7
+    server: us-01.ghelper.net
+    port: 443
+    type: http
+    username: "15c4db0c-48fe-11eb-a8bf-f23c91cfbbc9"
+    password: d5ff023a9203aede1cc0092a0bd607b8
+    tls: true
